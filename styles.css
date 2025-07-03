@@ -44,6 +44,9 @@ nav#navbar {
   backdrop-filter: blur(8px);
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
+[data-theme="light"] nav#navbar {
+  background: rgba(255,255,255,0.85);
+}
 nav#navbar ul {
   display: flex;
   justify-content: center;
@@ -500,6 +503,9 @@ nav#navbar a:hover::after, nav#navbar a:focus::after {
   box-shadow: var(--shadow);
   padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
+[data-theme="light"] #contactForm {
+  background: #fff;
+}
 #contactForm input, #contactForm textarea {
   background: #181a1b;
   color: var(--text);
@@ -510,6 +516,10 @@ nav#navbar a:hover::after, nav#navbar a:focus::after {
   outline: none;
   transition: border var(--transition), box-shadow var(--transition);
   resize: none;
+}
+[data-theme="light"] #contactForm input, [data-theme="light"] #contactForm textarea {
+  background: #fff;
+  color: var(--text);
 }
 #contactForm input:focus, #contactForm textarea:focus {
   border-color: var(--accent);
